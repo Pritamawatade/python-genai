@@ -1,6 +1,10 @@
+from dotenv import load_dotenv
 from fastapi import FastAPI, Body
 from ollama import ChatResponse, chat, Client
+
 app = FastAPI()
+
+load_dotenv()
 client = Client(
     host="http://localhost:11434"
 )
