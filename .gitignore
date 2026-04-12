@@ -2,3 +2,5 @@
 ollama_fastapi/__pycache__/server.cpython-314.pyc
 rag/.env
 venv/
+rag_queue/queues/__pycache__/
+rag_queue/queues/.env
