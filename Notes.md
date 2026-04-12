@@ -11,3 +11,11 @@
 - ChatML schema : {role: "user" | "system" | "developer" | "assistant", content: ""} like this  
 - INST prompting: [INST] user instruction [/INST] everything is in the wrap of brackets.
 
+# Steps to create RAG
+
+- Setup vector db. docker-compose.yml 
+- setup document loaders with PyPDFLoader
+- setup text_spliter
+- split the pdf into chunks 
+- create openai embeddings out of openaiembedding model
+- do the emebedding with QdrantvectorStore.from_document(docs)
