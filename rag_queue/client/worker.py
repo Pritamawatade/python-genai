@@ -1,7 +1,8 @@
 from langchain_qdrant import QdrantVectorStore
 from openai import OpenAI
 from langchain_openai import OpenAIEmbeddings
-
+from dotenv import load_dotenv
+load_dotenv()
 def process_query(query: str):
     client = OpenAI()
     embeddings = OpenAIEmbeddings(model="text-embedding-3-small")

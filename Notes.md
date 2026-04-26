@@ -19,3 +19,19 @@
 - split the pdf into chunks 
 - create openai embeddings out of openaiembedding model
 - do the emebedding with QdrantvectorStore.from_document(docs)
+
+# Langgraph 
+- Langgraph is the low level agent workflow building tool. 
+- State: In Langgraph a state is global shared object between nodes. we can store common knowledge between nodes with state.
+- A node is nothing but a function which does a specific work and have access of state object.
+- you can add node to graph like this 
+```python 
+
+graph_builder.add_node("chat", chat)
+graph_builder.add_node("sample_node", sample_node)
+
+
+
+```
+
+
