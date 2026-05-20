@@ -27,11 +27,27 @@
 - you can add node to graph like this 
 ```python 
 
+# for adding the node in graph
 graph_builder.add_node("chat", chat)
 graph_builder.add_node("sample_node", sample_node)
 
+# for adding the edge in the graph
+
+graph_builder.add_edge(START, "chat")
+graph_builder.add_edge("chat", "sample_node")
+graph_builder.add_edge("sample_node", END)
+
+# for compiling and running the graph
+
+graph = graph_builder.compile()
+
+updates_state = graph.invoke(State({"messages": ["Hi my name is pritam"]}))
 
 
 ```
+- You have to pass intial stage of state in the invoke for running the graph
+
+
+
 
 
