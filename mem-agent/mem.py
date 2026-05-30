@@ -7,6 +7,9 @@ import json
 
 load_dotenv()  # Load environment variables from .env file
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+NEO_CONNECTION_URI = os.getenv("NEO_CONNECTION_URI")
+NEO_USERNAME = os.getenv("NEO_USERNAME")
+NEO_PASS = os.getenv("NEO_PASS")
 
 config = {
     "version": "v1.1",
@@ -18,6 +21,14 @@ config = {
     "provider": "openai",
         "config": { "api_key": OPENAI_API_KEY, "model": "gpt-4.1" }
         
+    },
+    "graph_store":{
+        "provider":"neo4j",
+        "config":{
+            "url": NEO_CONNECTION_URI,
+            "username": NEO_USERNAME,
+            "password": NEO_PASS
+        }
     },
     "vector_store":{
         "provider":"qdrant",

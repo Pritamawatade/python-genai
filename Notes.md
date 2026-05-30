@@ -57,3 +57,8 @@ updates_state = graph.invoke(State({"messages": ["Hi my name is pritam"]}))
 - Episodic term Memory 
 - Symentic term Memory 
 - Factual term Memory 
+
+
+### Cypher query 
+
+- Cypher query is used to talk to graph databases like neo4j
