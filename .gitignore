@@ -5,3 +5,4 @@ venv/
 rag_queue/queues/__pycache__/
 rag_queue/queues/.env
 rag_queue/client/__pycache__
+mem-agent/.env

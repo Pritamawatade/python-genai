@@ -50,4 +50,10 @@ updates_state = graph.invoke(State({"messages": ["Hi my name is pritam"]}))
 
 
 
+### Types of memory 
 
+- Short term memory
+- Long term Memory 
+- Episodic term Memory 
+- Symentic term Memory 
+- Factual term Memory 
